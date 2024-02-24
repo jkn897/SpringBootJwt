@@ -1,0 +1,58 @@
+spring:
+  application:
+    name: Employee Management
+  security:
+    user:
+      password: hello
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    open-in-view: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: India@123
+#    url: jdbc:postgresql://${DB_HOST}:5432/${DB_NAME}
+#    username: ${POSTGRES_USER}
+#    password: ${POSTGRES_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+#    driver-class-name: org.h2.Driver
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: jitendra.nayak897 
+    password: lqdswyqrrcsgnzfw
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          ssl:
+#            protocols: "TLSV1.2"
+            trust: "smtp.gmail.com"
+        transport:
+          protocol: "smtp"
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+server:
+  port: 8181
+scheduler:
+  cron-times:
+    each-five-minute: 0 */10 * ? * *
+    everyday-three-am: 0 0 3 * * *
+test:
+  mail:
+    to: jitu0000.2008@rediffmail.com
+  image:
+    path: D:/WS/PIP APP/employee-mgmt/src/main/resources/static/images/
+logging:
+  level:
+    web: debug
+  file:
+    name: employee-management.log
