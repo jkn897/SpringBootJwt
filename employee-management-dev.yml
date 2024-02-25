@@ -25,7 +25,7 @@ spring:
     host: smtp.gmail.com
     port: 587
     username: jitendra.nayak897 
-    password: lqdswyqrrcsgnzfw
+    password: ''
     properties:
       mail:
         smtp:
@@ -49,8 +49,6 @@ scheduler:
 test:
   mail:
     to: jitu0000.2008@rediffmail.com
-  image:
-    path: D:/WS/PIP APP/employee-mgmt/src/main/resources/static/images/
 logging:
   level:
     web: debug
