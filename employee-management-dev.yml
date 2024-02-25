@@ -24,8 +24,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: jitendra.nayak897
-    password: {cipher}37f974cb8f1cf7149704171b31435da27e7d8cf7afdd89ed4ebf31cc2c0aaade3d8d580629e9c3820c89d9a4a948e2fe
+    username: '{cipher}57bb3f3d30a6ce4b8af63f25c109c82e7fd1fa024e8b1b213cab3c5d5a2a112afeece6fe347424b5810ed445e9183531'
+    password: '{cipher}37f974cb8f1cf7149704171b31435da27e7d8cf7afdd89ed4ebf31cc2c0aaade3d8d580629e9c3820c89d9a4a948e2fe'
     properties:
       mail:
         smtp:
@@ -46,9 +46,11 @@ scheduler:
   cron-times:
     each-five-minute: 0 */10 * ? * *
     everyday-three-am: 0 0 3 * * *
+enc:
+  key: abackabase
 test:
   mail:
-    to: jitu0000.2008@rediffmail.com
+    to: '{cipher}c9c6e999a7054b36a2de3ebc900d7bef0a89e50bde38435f1dbab227a0fc854e4909221b1a85e64cd53687958bce7a7a'
 logging:
   level:
     web: debug
