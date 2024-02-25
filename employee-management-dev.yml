@@ -47,7 +47,7 @@ scheduler:
     each-five-minute: 0 */10 * ? * *
     everyday-three-am: 0 0 3 * * *
 enc:
-  key: abackabase
+  key: c0a45bee607f7f2d2fd8f81420e0c1bfc70f78e8e866894e88dc1a13abaa4713
 test:
   mail:
     to: '{cipher}c9c6e999a7054b36a2de3ebc900d7bef0a89e50bde38435f1dbab227a0fc854e4909221b1a85e64cd53687958bce7a7a'
